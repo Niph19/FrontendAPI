@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach ($siswa as $s)
-        <p>{{ $s['nama'] }}</p>
-    @endforeach
+    <a href="{{ route('siswa.index') }}">Siswa</a>
+    <a href="{{ route('kelas.index') }}">Kelas</a>
+    <a href="{{ route('jeniskelamin.index') }}">Jenis Kelamin</a>
+    <a href="{{ route('osis.index') }}">Daftar OSIS</a>
 </body>
 </html>

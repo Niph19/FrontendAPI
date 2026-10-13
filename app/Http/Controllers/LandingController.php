@@ -11,23 +11,23 @@ class LandingController extends Controller
         return view('landing');
     }
 
-    public function siswa()
-    {
-        return view('siswa');
-    }
+    // public function siswa()
+    // {
+    //     return view('siswa');
+    // }
 
-    public function kelas()
-    {
-        return view('kelas');
-    }
+    // public function kelas()
+    // {
+    //     return view('kelas');
+    // }
 
-    public function jeniskelamin()
-    {
-        return view('jeniskelamin');
-    }
+    // public function jeniskelamin()
+    // {
+    //     return view('jeniskelamin');
+    // }
 
-    public function daftarosis()
-    {
-        return view('daftarosis');
-}
+    // public function daftarosis()
+    // {
+    //     return view('daftarosis');
+// }
 }

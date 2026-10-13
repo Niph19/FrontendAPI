@@ -14,7 +14,7 @@ class DaftarController extends Controller
     {
         $request = Http::get(env('API_URL') . '/pendaftaran-osis');
         $daftar = $request->json()['data'];
-        return view('landing', compact('daftar'));
+        return view('daftarosis', compact('daftar'));
     }
 
     /**
@@ -32,7 +32,7 @@ class DaftarController extends Controller
     {
         //
     }
-    
+
     /**
      * Display the specified resource.
      */

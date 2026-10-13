@@ -14,7 +14,7 @@ class SiswaController extends Controller
     {
         $request = Http::get(env('API_URL') . '/siswa');
         $siswa = $request->json()['data'];
-        return view('landing', compact('siswa'));
+        return view('siswa', compact('siswa'));
     }
 
     public function create()

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class JenisKelaminController extends Controller
 {
@@ -11,7 +12,9 @@ class JenisKelaminController extends Controller
      */
     public function index()
     {
-        //
+        $request = Http::get(env('API_URL') . '/jenis-kelamin');
+        $jenisKelamin = $request->json()['data'];
+        return view('jeniskelamin', compact('jenisKelamin'));
     }
 
     /**
