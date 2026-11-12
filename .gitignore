@@ -5,6 +5,11 @@
 .env.production
 .phpactor.json
 .phpunit.result.cache
+PRODUCT.md
+DESIGN.md
+.agents/
+.impeccable/
+.kiro
 /.codex
 /.cursor/
 /.idea
